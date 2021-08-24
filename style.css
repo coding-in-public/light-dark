@@ -38,8 +38,15 @@ input, textarea, button {
   --accent3-dark: hsl(40, 89%, 65%);
   --bkg1-dark: hsl(218, 15.4%, 10.2%);
   --bkg2-dark: hsl(218, 14.7%, 18.7%);
+  
+/*   --shadow-dark: 20px 20px 50px hsl(255, 36%, 17%, .35),
+  -30px -30px 50px hsl(26, 37%, 96%, .15); <-- THIS IS WHAT I SHOWED YOU IN THE VIDEO */
   --shadow-dark: 20px 20px 50px hsl(255, 36%, 17%, .35),
-  -30px -30px 50px hsl(26, 37%, 96%, .15);
+  -30px -30px 50px hsl(26, 37%, 26%, .15);
+  
+/* ^ this is what I have in the final code at codinginpublic.dev/projects/light-dark/ 
+  I missed the change from 96% lightness in the second box-shadow to 26% lightness when doing the video
+  */
 }
 
 @media(prefers-color-scheme: dark){
