@@ -23,47 +23,14 @@ input, textarea, button {
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   
-  --text-light: hsl(255, 36%, 17%);
-  --accent1-light: hsl(175, 100%, 31%);
-  --accent2-light: hsl(21, 84%, 56%);
-  --accent3-light: hsl(40, 89%, 65%);
-  --bkg1-light: hsl(0, 0%, 100%);
-  --bkg2-light: hsl(26, 37%, 96%);
-  --shadow-light: 20px 20px 50px hsl(255, 36%, 17%, .35),
+  --text: hsl(255, 36%, 17%);
+  --accent1: hsl(175, 100%, 31%);
+  --accent2: hsl(21, 84%, 56%);
+  --accent3: hsl(40, 89%, 65%);
+  --bkg1: hsl(0, 0%, 100%);
+  --bkg2: hsl(26, 37%, 96%);
+  --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
   -30px -30px 50px hsl(26, 37%, 96%, .15);
-  
-  --text-dark: hsl(217, 54.2%, 88%);
-  --accent1-dark: hsl(175, 100%, 31%);
-  --accent2-dark: hsl(21, 84%, 56%);
-  --accent3-dark: hsl(40, 89%, 65%);
-  --bkg1-dark: hsl(218, 15.4%, 10.2%);
-  --bkg2-dark: hsl(218, 14.7%, 18.7%);
-  --shadow-dark: 20px 20px 50px hsl(255, 36%, 17%, .35),
-  -30px -30px 50px hsl(26, 37%, 96%, .15);
-}
-
-@media(prefers-color-scheme: dark){
-  :root {
-    --text: var(--text-dark);
-    --accent1: var(--accent1-dark);
-    --accent2: var(--accent2-dark);
-    --accent3: var(--accent3-dark);
-    --bkg1: var(--bkg1-dark);
-    --bkg2: var(--bkg2-dark);
-    --shadow: var(--shadow-dark);
-  }
-}
-
-@media(prefers-color-scheme: light){
-  :root {
-    --text: var(--text-light);
-    --accent1: var(--accent1-light);
-    --accent2: var(--accent2-light);
-    --accent3: var(--accent3-light);
-    --bkg1: var(--bkg1-light);
-    --bkg2: var(--bkg2-light);
-    --shadow: var(--shadow-light);
-  }
 }
 
 /* utility classes */
