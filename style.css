@@ -66,26 +66,6 @@ input, textarea, button {
   }
 }
 
-[color-scheme="dark"]{
-  --text: var(--text-dark);
-  --accent1: var(--accent1-dark);
-  --accent2: var(--accent2-dark);
-  --accent3: var(--accent3-dark);
-  --bkg1: var(--bkg1-dark);
-  --bkg2: var(--bkg2-dark);
-  --shadow: var(--shadow-dark);
-}
-
-[color-scheme="light"] {
-  --text: var(--text-light);
-  --accent1: var(--accent1-light);
-  --accent2: var(--accent2-light);
-  --accent3: var(--accent3-light);
-  --bkg1: var(--bkg1-light);
-  --bkg2: var(--bkg2-light);
-  --shadow: var(--shadow-light);
-}
-
 /* utility classes */
 /* text color */
 .text {
@@ -210,22 +190,6 @@ nav {
   width: clamp(160px, 69.2307695px + 23.076923vw, 300px);
   background-color: var(--bkg1);
   position: relative;
-}
-
-.theme {
-  background-color: var(--text);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 3px solid var(--bkg1);
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-}
-
-.theme:is(:hover, :focus){
-  background-color: var(--accent1);
-  opacity: .8;
 }
 
 body {
