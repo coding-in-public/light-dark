@@ -22,93 +22,84 @@ input, textarea, button {
 :root {
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
-  
-  --text: hsl(255, 36%, 17%);
-  --accent1: hsl(175, 100%, 31%);
-  --accent2: hsl(21, 84%, 56%);
-  --accent3: hsl(40, 89%, 65%);
-  --bkg1: hsl(0, 0%, 100%);
-  --bkg2: hsl(26, 37%, 96%);
-  --shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
-  -30px -30px 50px hsl(26, 37%, 96%, .15);
 }
 
 /* utility classes */
 /* text color */
 .text {
-  color: var(--text);
+  color: hsl(255, 36%, 17%);
 }
 .accent1 {
-  color: var(--accent1);
-  fill: var(--accent1);
+  color: hsl(175, 100%, 31%);
+  fill: hsl(175, 100%, 31%);
 }
 
 .accent1--stroke {
-  stroke: var(--accent1);
+  stroke: hsl(175, 100%, 31%);
 }
 
 .accent2 {
-  color: var(--accent2);
-  fill: var(--accent2);
+  color: hsl(21, 84%, 56%);
+  fill: hsl(21, 84%, 56%);
 }
 .accent3 {
-  color: var(--accent3);
-  fill: var(--accent3);
+  color: hsl(40, 89%, 65%);
+  fill: hsl(40, 89%, 65%);
 }
 .bkg1 {
-  color: var(--bkg1);
+  color: hsl(0, 0%, 100%);
 }
 .bkg2 {
-  color: var(--bkg2);
+  color: hsl(26, 37%, 96%);
 }
 
 .bkg2--stroke {
-  stroke: var(--bkg2);
+  stroke: hsl(26, 37%, 96%);
 }
 
 .bkg2--fill {
-  fill: var(--bkg2);
+  fill: hsl(26, 37%, 96%);
 }
 
 /* link color */
 .text-link {
-  color: var(--text);
+  color: hsl(255, 36%, 17%);
 }
 .accent1-link {
-  color: var(--accent1);
+  color: hsl(175, 100%, 31%);
 }
 .accent2-link {
-  color: var(--accent2);
+  color: hsl(21, 84%, 56%);
 }
 .accent3-link {
-  color: var(--accent3);
+  color: hsl(40, 89%, 65%);
 }
 .bkg1-link {
-  color: var(--bkg1);
+  color: hsl(0, 0%, 100%);
 }
 .bkg2-link {
-  color: var(--bkg2);
+  color: hsl(26, 37%, 96%);
 }
 
 /* background color */
 
 .text-bg {
-  background-color: var(--text);
+  background-color: hsl(255, 36%, 17%);
 }
 .accent1-bg {
-  background-color: var(--accent1);
+  background-color: hsl(175, 100%, 31%);
 }
 .accent2-bg {
-  background-color: var(--accent2);
+  background-color: hsl(21, 84%, 56%);
 }
 .accent3-bg {
-  background-color: var(--accent3);
+  background-color: hsl(40, 89%, 65%);
 }
 .bkg1-bg {
-  background-color: var(--bkg1);
+  background-color: hsl(0, 0%, 100%);
 }
 .bkg2-bg {
-  background-color: var(--bkg2);
+  background-color: hsl(26, 37%, 96%);
 }
 
 /* text sizing */
@@ -127,7 +118,7 @@ input, textarea, button {
   align-items: center;
   gap: .5rem;
   max-width: max-content;
-  box-shadow: 4px 4px var(--text);
+  box-shadow: 4px 4px hsl(255, 36%, 17%);
   text-decoration: none;
   transition: all 200ms cubic-bezier(1, -0.04, 0, 1.21);
 }
@@ -155,14 +146,14 @@ nav {
 
 .nav-logo {
   width: clamp(160px, 69.2307695px + 23.076923vw, 300px);
-  background-color: var(--bkg1);
+  background-color: hsl(0, 0%, 100%);
   position: relative;
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  color: var(--text);
-  background-color: var(--bkg1);
+  color: hsl(255, 36%, 17%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 main {
@@ -267,7 +258,8 @@ header {
 .meet-img__teacher {
   width: 100%;
   grid-area: 1/2/3/4;
-  box-shadow: var(--shadow);
+  box-shadow: 20px 20px 50px hsl(255, 36%, 17%, .35),
+  -30px -30px 50px hsl(26, 37%, 96%, .15);
 }
 
 .btn-connect {
@@ -318,7 +310,7 @@ header {
   grid-gap: .5rem;
   padding: 3rem 2rem 2rem;
   border-radius: 15px;
-  border-bottom: 5px solid var(--accent3);
+  border-bottom: 5px solid hsl(40, 89%, 65%);
   position: relative;
 }
 
@@ -329,7 +321,7 @@ header {
   transform: translate(-50%, -50%);
   padding: 1rem;
   border-radius: 50%;
-  border: 8px solid var(--bkg1);
+  border: 8px solid hsl(0, 0%, 100%);
   line-height: .75;
   font-size: clamp(1.3rem, 0.47272731rem + 3.781818vw, 2.6rem);
   width: clamp(4rem, 2.72727269rem + 5.818182vw, 6rem);
@@ -338,7 +330,7 @@ header {
 
 .options-card {
   max-width: 360px;
-  border-bottom: 5px solid var(--accent2);
+  border-bottom: 5px solid hsl(21, 84%, 56%);
   grid-template-rows: 1rem 1fr;
   text-align: center;
 }
@@ -361,7 +353,7 @@ header {
 .connect-form {
   max-width: 500px;
   position: relative;
-  border: 12px solid var(--bkg1);
+  border: 12px solid hsl(0, 0%, 100%);
   border-radius: 10px;
   padding: 1.5rem 3rem;
   margin: -6rem auto 0;
@@ -376,15 +368,15 @@ header {
 
 [type="email"]{
   padding: .5rem;
-  border: 3px solid var(--bkg2);
+  border: 3px solid hsl(26, 37%, 96%);
 }
 
 [type="submit"]{
   padding: .5rem 1rem;
-  border: 3px solid var(--bkg2);
+  border: 3px solid hsl(26, 37%, 96%);
   border-radius: 0;
-  color: var(--text);
-  background-color: var(--bkg2);
+  color: hsl(255, 36%, 17%);
+  background-color: hsl(26, 37%, 96%);
   margin-left: -5px;
   cursor: pointer;
 }
@@ -404,7 +396,7 @@ footer div {
 
 .footer-icons:hover {
   transform: rotate(15deg) scale(1.1);
-  filter: drop-shadow(1px 1px 1px var(--text));
+  filter: drop-shadow(1px 1px 1px hsl(255, 36%, 17%));
 }
 
 
@@ -429,7 +421,7 @@ footer div {
   [type="submit"]{
     margin: 0;
     width: 100%;
-    background-color: var(--bkg2);
+    background-color: hsl(26, 37%, 96%);
   }
 }
 
